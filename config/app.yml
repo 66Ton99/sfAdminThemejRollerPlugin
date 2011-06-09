@@ -30,6 +30,9 @@ all:
     # possible value: horizontal or vertical
     # (not yet implemented)
     edit_tab_position: vertical
+    
+    # Show the custom view instead of the “edit” view after creating a new item
+    action_after_save: edit
 
     # icons for each buttons
     # icon class as: ui-icon-value

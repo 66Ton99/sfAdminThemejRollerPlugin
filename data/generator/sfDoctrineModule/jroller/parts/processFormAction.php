@@ -19,7 +19,7 @@
       {
         $this->getUser()->setFlash('notice', $notice);
 
-        $this->redirect(array('sf_route' => '<?php echo $this->getUrlForAction('edit') ?>', 'sf_subject' => $<?php echo $this->getSingularName() ?>));
+        $this->redirect(array('sf_route' => '<?php echo $this->getUrlForAction(sfConfig::get('app_sf_admin_theme_jroller_plugin_action_after_save')) ?>', 'sf_subject' => $<?php echo $this->getSingularName() ?>));
       }
     }
     else
