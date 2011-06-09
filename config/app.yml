@@ -33,6 +33,12 @@ all:
     
     # Show the custom view instead of the “edit” view after creating a new item
     action_after_save: edit
+    
+    # Data format in show action
+    show_data_format:
+      format: d
+      culture: null
+      charset: null
 
     # icons for each buttons
     # icon class as: ui-icon-value
