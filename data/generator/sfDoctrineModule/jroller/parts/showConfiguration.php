@@ -31,7 +31,8 @@
 
   public function getShowActions()
   {
-    return array(  '_list' => NULL,  '_edit' => NULL, '_delete' => NULL);
+    return <?php echo isset($this->config['show']['actions']) ? $this->asPhp($this->config['show']['actions']) : "array(  '_list' => NULL,  '_edit' => NULL, '_delete' => NULL)" ?>;
+<?php unset($this->config['show']['actions']) ?>
   }
 
   
